@@ -42,3 +42,33 @@ El sistema incluye las siguientes funcionalidades:
   - Tabla para listar todas las reservas
   - Botones para actualizar fechas y cancelar reservas
 
+# Instrucciones para Ejecutar el Proyecto
+
+### Requisitos Previos
+
+- **Java 17 o superior**
+- **Maven**
+- **Node.js y npm**
+- **MySQL**
+
+### 1. Configuración del Backend (Spring Boot)
+
+Instala dependencias:
+
+mvn clean install
+
+Crea la base de datos hotel_reservas en MySQL:
+sql
+CREATE DATABASE hotel_reservas;
+
+Ejecuta el backend:
+
+mvn spring-boot:run
+
+Configura la URL del Backend en src/config.js:
+
+export const API_URL = 'http://localhost:8080';
+
+Ejecuta el frontend:
+
+npm start
